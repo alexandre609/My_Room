@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>My Room</title>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  
 </head>
 
 <body>
@@ -26,6 +26,7 @@
 		  <li><a href="#top">Haut</a></li>
 		  <li><a href="#webrtc">WebRTC</a></li>
 		  <li><a href="#bootstrap">Bootstrap</a></li>
+		  <li><a href="#rss">RSS</a></li>
 		</ul>
 	  </div>
 	</div>
@@ -41,6 +42,7 @@
 	  </p>
 	</div>
   </div>
+
   
   <div id="ideas" class="container">
     <div class="page-header">
@@ -62,20 +64,18 @@
     <div class="page-header">
 	  <h1>WebRTC</h1>
     </div>
-  
+	
     <div class="well">
 	  <p>
 	    Sur ce site, WebRTC ne sert qu'à se filmer, mais je verrai bien si je peux m'en servir autrement encore.<br>
 		Je vais tenter plus tard de streamer réellement (chat audiovisuel et &eacute;crit).<br>
 		En attendant, les d&eacute;mos de WebRTC permettent d'ajouter des effets, de reconnaître les visages, etc.<br>
       </p>
-	  <p>
-		<video autoplay controls>
-			
+	  <div class="embed-responsive embed-responsive-4by3">
+		<video class="embed-responsive-item" autoplay controls>
 			Cam&eacute;ra absente ou d&eacute;sactiv&eacute;e
-		
 		</video>
-	  </p>
+	  </div>
 	</div>
   </div>
 
@@ -90,13 +90,36 @@
 	    J'ai déjà souvent utilisé Bootstrap. Je ne peux pas placer d'exemple en particulier dans cette section,
 		puisque la page entière utilise déjà cette technologie.<br>
 		Je suis sûr qu'il y a encore des possibilités que je n'ai pas exploré.<br>
-		J'ai inclus la librairie bootstrap par CDN pour limiter le nombre de fichiers à inclure dans mes dossiers,
-		 en échange d'une dépendance aux serveurs qui hébergent bootstrap.<br>
 		Normalement, le site est responsive. Il devrait donc s'adapter à n'importe quel support (téléphone, tablette, PC, ...).
       </p>
 	</div>
   </div>
   
+  
+  <div id="rss" class="container">
+    <div class="page-header">
+		<h1>Flux RSS</h1>
+	</div>
+	<div class="well">
+		<p>Pour l'instant le flux RSS est présenté de façon rudimentaire.
+		Peut-être que je finirai par en faire quelque chose de plus joli.</p>
+		<h2>A la une</h2>
+		<div id="alaune" style="display:none;"></div>
+		<h2>Hi-tech</h2>
+		<div id="hitech" style="display:none;"></div>
+		<h2>Musique</h2>
+		<div id="musique" style="display:none;"></div>
+		<h2>Sport</h2>
+		<div id="sport" style="display:none;"></div>
+		<h2>Vid&eacute;os</h2>
+		<div id="video" style="display:none;"></div>
+	</div>
+  </div>
+  
+  
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.rss.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
