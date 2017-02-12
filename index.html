@@ -32,6 +32,8 @@
 	</div>
   </nav>
 
+  
+  
   <div class="jumbotron">
     <div class="container">
 	  <h1>Bienvenue !</h1>
@@ -43,6 +45,14 @@
 	</div>
   </div>
 
+  
+		
+		
+		
+  
+  
+  
+  
   
   <div id="ideas" class="container">
     <div class="page-header">
@@ -72,10 +82,12 @@
 		En attendant, les d&eacute;mos de WebRTC permettent d'ajouter des effets, de reconnaître les visages, etc.<br>
       </p>
 	  <div class="embed-responsive embed-responsive-4by3">
-		<video class="embed-responsive-item" autoplay controls>
+		<video id="videoStream" class="embed-responsive-item">
 			Cam&eacute;ra absente ou d&eacute;sactiv&eacute;e
 		</video>
+		
 	  </div>
+	  <button id="buttonStream">Lancer le stream</button>
 	</div>
   </div>
 
@@ -94,6 +106,8 @@
       </p>
 	</div>
   </div>
+  
+  
   
   
   <div id="rss" class="container">
@@ -116,10 +130,66 @@
 	</div>
   </div>
   
-  
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.rss.js"></script>
-  <script src="js/main.js"></script>
+	<!--div id="rss" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+		<li data-target="#rss" data-slide-to="0" class="active"></li>
+		<li data-target="#rss" data-slide-to="1"></li>
+		<li data-target="#rss" data-slide-to="2"></li>
+		<li data-target="#rss" data-slide-to="3"></li>
+		<li data-target="#rss" data-slide-to="4"></li>
+	  </ol>
+ 
+	  <div class="carousel-inner">
+		<div class="item active">
+		  <img src="images/gris.png" alt="...">
+		  <div class="carousel-caption">
+			<h2>A la une</h2>
+			<div id="alaune" style="display:none;"></div>
+		  </div>
+		</div>
+		<div class="item">
+		  <img src="images/gris.png" alt="...">
+		  <div class="carousel-caption">
+			<h2>Hi-tech</h2>
+			<div id="hitech" style="display:none;"></div>
+		  </div>
+		</div>
+		<div class="item">
+		  <img src="images/gris.png" alt="...">
+		  <div class="carousel-caption">
+			<h2>Musique</h2>
+			<div id="musique" style="display:none;"></div>
+		  </div>
+		</div>
+		<div class="item">
+		  <img src="images/gris.png" alt="...">
+		  <div class="carousel-caption">
+			<h2>Sport</h2>
+			<div id="sport" style="display:none;"></div>
+		  </div>
+		</div>
+		<div class="item">
+		  <img src="images/gris.png" alt="...">
+		  <div class="carousel-caption">
+			<h2>Vid&eacute;os</h2>
+			<div id="video" style="display:none;"></div>
+		  </div>
+		</div>
+	  </div>
+ 
+	  <a class="left carousel-control" href="#rss" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	  </a>
+	  <a class="right carousel-control" href="#rss" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	  </a>
+	</div><!-- Carousel -->
+
+
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.rss.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

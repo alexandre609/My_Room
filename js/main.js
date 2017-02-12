@@ -7,8 +7,9 @@ $("#musique").rss("http://www.lessentiel.lu/rss/musique.tmpl").show();
 $("#sport").rss("http://www.lessentiel.lu/rss/sport.tmpl").show();
 $("#video").rss("http://www.lessentiel.lu/rss/video.tmpl").show();
 
+
 // Put variables in global scope to make them available to the browser console.
-var video = document.querySelector('video');
+var video = document.querySelector('video#videoStream');
 
 var constraints = {
   audio: false,
@@ -25,5 +26,9 @@ function handleError(error) {
 }
 
 navigator.mediaDevices.getUserMedia(constraints).
-    then(handleSuccess).catch(handleError);
+	then(handleSuccess).catch(handleError);
+	
 
+$('.carousel').carousel({
+		
+});
